@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Dashboard Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+        <div class="flex items-center">
+            <img src="/api/placeholder/40/40" alt="Msg Titans Logo" class="mr-2">
+            <span class="text-2xl font-bold"><span class="text-white">MSG</span><span class="text-blue-400">TITANS</span></span>
+        </div>
+        <a href="index.html" class="text-gray-300 hover:text-white">Back to Home</a>
+    </nav>
+
+    <main class="container mx-auto py-12 px-4">
+        <h1 class="text-4xl font-bold mb-8">AI-Powered Dashboard Demo</h1>
+        
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Upload Your Excel File</h2>
+            <p class="text-gray-400 mb-4">Upload your reinsurance data to get AI-powered insights.</p>
+            <div class="gradient-border inline-block">
+                <label for="file-upload" class="cursor-pointer bg-gray-800 text-white px-6 py-3 rounded-lg inline-block hover:bg-gray-700">
+                    Choose File
+                </label>
+            </div>
+            <input id="file-upload" type="file" accept=".xlsx,.xls" class="hidden">
+        </section>
+
+        <section id="ai-insights" class="hidden">
+            <h2 class="text-2xl font-semibold mb-4">AI-Generated Insights</h2>
+            <div class="gradient-border">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <div id="loading" class="text-center py-8 hidden">
+                        <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mx-auto"></div>
+                        <p class="mt-4">Generating insights...</p>
+                    </div>
+                    <div id="insights-content"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container mx-auto px-4 text-center py-8">
+        <p>© 2024 Msg Titans. All rights reserved.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

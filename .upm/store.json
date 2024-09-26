@@ -1,0 +1,1 @@
+{"version":2,"languages":{"nodejs-npm":{"specfileHash":"2e315ec9eb566c0bcfede171be6717da","lockfileHash":"980240dac7fdab6baef7e86671a59140","guessedImports":["@google/generative-ai","xlsx","cors","dotenv","express","multer"],"guessedImportsHash":"8ff108d7db4411095ab273cb2260417f"}}}
